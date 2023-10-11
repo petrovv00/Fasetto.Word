@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\Logo\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Logo\icon.ico" />
+    <None Remove="Images\Logo\logo-small.png" />
+    <None Remove="Images\Logo\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\Logo\icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Logo\icon.ico" />
+    <Resource Include="Images\Logo\logo-small.png" />
+    <Resource Include="Images\Logo\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+</Project>
